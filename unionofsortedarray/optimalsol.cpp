@@ -54,3 +54,4 @@ public:
     }
 };
 //gol gappe khaane ka maan ho rha hai
+//yaar mujhe bhuki bhuki lagi hai
