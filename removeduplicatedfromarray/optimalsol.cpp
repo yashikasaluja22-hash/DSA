@@ -1,16 +1,16 @@
 #include <bits/stdc++.h> 
 using namespace std;
 class Solution {
-public:
-    int removeDuplicates(vector<int>& nums) {
-     int i = 0;
-     for(int j = 1; j < nums.size(); j++){
-        if(nums[j] != nums[i]){
-           nums[i+1] = nums[j];
-           i++;
-        }else{
+  public:
+    vector<int> removeDuplicates(vector<int> &arr) {
+    int j = 0;
+    for(int i = 1; i < arr.size(); i++){
+        if(arr[j] != arr[i]){
+        arr[j+1] = arr[i];
+        j++;
         }
-     }
-     return (i+1); //size of new array
+    }
+    arr.resize(j+1);
+    return arr;
     }
 };
