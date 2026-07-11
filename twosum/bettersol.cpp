@@ -2,14 +2,15 @@
 using namespace std;
 string read(int n, vector<int> book, int target)
 {
-unordered_map<int, int> mpp;
-for(int i = 0; i < n; i++){
-    int a = book[i];
-    int more = target - a;
-    if(mpp.find(more) != mpp.end()){
+sort(book.begin(), book.end());
+int left = 0, right = n-1;
+while(left < right){
+    int sum = book[left] + book[right];
+    if(sum == target){
         return "YES";
     }
-    mpp[a] = i;
+    else if(sum > target) right--;
+    else left++;
 }
 return "NO";
 }
