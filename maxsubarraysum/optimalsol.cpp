@@ -48,3 +48,6 @@ intialise like this --> maxi = lLONG_MIN;
 
 //if they ask to return the subarray or its length --> jiska max sum liye tumne
 //so ans is above in code in comments for that
+
+//TC = O(N)
+//SC = O(1)
