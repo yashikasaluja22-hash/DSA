@@ -9,4 +9,4 @@ for(int i = 1; i <= N; i++){
    if(hash[i] == 0) return i;
 }
 return -1;
-}
+}//jjajajahahahahahaha
