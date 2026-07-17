@@ -10,3 +10,4 @@ for(int i = 1; i <= N; i++){
 }
 return -1;
 }//jjajajahahahahahaha
+//chimpui chimpui
