@@ -1,7 +1,7 @@
 #include <bits/stdc++.h> 
 using namespace std;
 void rearrange(vector<int> &arr)
-{
+{//optimal sol for variety in which we dont know whether +ve or -ve are equal (no. of integers)
 int n = arr.size();
 vector<int> pos;
 vector<int> neg;
@@ -40,9 +40,9 @@ for(int x : arr){
     if(x > 0) pos.push_back(x);
 }
 int i = 0;
-while(i < pos.size() && i < neg.size()){
-    arr[i] = neg[i];
-    arr[i] = pos[i];
+for(int i = 0; i < n/2; i++)
+    arr[2*i] = neg[i];
+    arr[2*i+1] = pos[i];
     i++;
 }
-*/
+*///this above code is actually brute sol for equal no. of +ve & -ve integers in array variety of ques
